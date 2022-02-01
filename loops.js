@@ -1,13 +1,17 @@
 /* Function to run whichever loop we picked */
 function main(){
-    forLoop();
+    let questions = parseInt(localStorage.getItem("questions"));
+    let max = parseInt(localStorage.getItem("max"));
+    let min = parseInt(localStorage.getItem("min"));
+    alert("Config = "+questions+"-"+max+"-"+min);
+    forLoop(questions,max,min);
     stats();
     tables();
 }
 
-function forLoop() {
+function forLoop(questions,max,min) {
     for (let question = 1; question <= questions; question++) {
-        let error = askQuestion();
+        let error = askQuestion(max,min);
         if (error[0] > 0) {
             error.splice(0,1);
             errors.push(error);
@@ -16,7 +20,7 @@ function forLoop() {
     }
 }
 
-function askQuestion(){
+function askQuestion(max,min){
     let error = [0,0,0];
     let x = Math.floor(Math.random() * (max - min + 1)) + min;
     let y = Math.floor(Math.random() * (max - min + 1)) + min;
