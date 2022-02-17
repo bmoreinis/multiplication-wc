@@ -1,3 +1,6 @@
+body {
+    background: black url("simple.jpg") no-repeat fixed center;
+}
 input{
     width:25px
 }
