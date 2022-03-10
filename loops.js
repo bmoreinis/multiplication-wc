@@ -78,10 +78,10 @@ function getAnswer() {
     if (answer.value != x * y) {
         question.innerText = "Incorrect, " + x + " x " + y + " = " + x * y;
         errors.push([x, y]);
-        nextQuestion = setInterval(next, 2500, 0);
+        nextQuestion = setInterval(next, 500, 0);
     } else {
         question.innerText = "Correct";
-        nextQuestion = setInterval(next, 1000, 0);
+        nextQuestion = setInterval(next, 250, 0);
     }
 }
 
