@@ -2,3 +2,5 @@
 var questions = parseInt(document.getElementById("questions").value);
 var min = parseInt(document.getElementById("min").value);
 var max = parseInt(document.getElementById("max").value);
+var errors = [];
+localStorage.setItem("errors",errors);

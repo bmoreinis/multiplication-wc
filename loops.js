@@ -92,8 +92,7 @@ function next() {
     }
     else {
         interface.setAttribute("class",null);
-        interface.innerHTML = "all questions complete";
         localStorage.setItem("errors",errors);
-        //document.location = 'stats.html';
+        document.location = 'stats.html';
     }
 }

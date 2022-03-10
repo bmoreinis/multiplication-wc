@@ -3,11 +3,14 @@
     <head>
         <title>Stats</title>
         <script src="stats.js"></script>
+        <script src="tables.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
-    <body onload="stats()">
-        <h1>Stats Page</h1>
-        <p>This is where we analyze errors, tell people how they did, and invite them to study tables.</p>
-        <button onclick="document.location='setup.html'">Start</button>
+    <body>
+        <div id="dashboard">
+            <h1>Stats Page</h1>
+            <p>This is where we analyze errors, tell people how they did, and invite them to study tables.</p>
+            <button onclick="stats()">Run Stats</button>
+        </div>
     </body>
 </html>

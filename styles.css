@@ -1,6 +1,9 @@
 body {
     background: black url("simple.jpg") no-repeat fixed center;
 }
+#dashboard {
+    margin: 10px 20%;
+}
 input{
     width:25px
 }
